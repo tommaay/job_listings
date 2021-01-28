@@ -1,0 +1,147 @@
+.jobs-hero-container {
+  margin: 1.6rem 0;
+  padding: 4.8rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  @include media-small {
+    padding: 3.2rem 0;
+    grid-template-columns: 1fr;
+  }
+
+  .jobs-hero-image-container {
+    @include display-flex;
+
+    @include media-small {
+      margin-top: 4.8rem;
+    }
+
+    img {
+      max-width: 38rem;
+    }
+
+    .gif {
+      display: none;
+    }
+
+    &:hover {
+      .image {
+        display: none;
+      }
+
+      .gif {
+        display: block;
+      }
+    }
+  }
+}
+
+.jobs-filter-container {
+  @include display-flex;
+  margin: 1.6rem 0 3.2rem;
+
+  @include media-small {
+    padding: 3.2rem 0 0;
+  }
+
+  :first-child {
+    margin-right: 3.2rem;
+  }
+
+  .select-container {
+    width: 20rem;
+
+    .select {
+      position: relative;
+
+      &:before {
+        content: '\25bc';
+        position: absolute;
+        top: 50%;
+        right: 1.6rem;
+        transform: translateY(-50%) scaleY(0.6);
+        color: $grey-medium;
+      }
+    }
+
+    select {
+      font-family: 'GT Eesti';
+      color: $grey-medium;
+      width: 100%;
+      font-size: 2rem;
+      line-height: 1.25;
+      font-weight: $font-weight-regular;
+      padding: 0.8rem 0 0.8rem 1.6rem;
+      border: 2px solid $grey-light;
+      border-radius: 5px;
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      @include media-small {
+        font-size: 1.6rem;
+      }
+    }
+  }
+}
+
+.jobs-list-container {
+  padding: 3.2rem 0;
+
+  @include media-small {
+    padding: 1.6rem 0;
+  }
+
+  .department-list-container {
+    padding: 3.2rem 0;
+  }
+
+  .department-heading {
+    @include display-flex($justify: flex-start);
+    margin-bottom: 3.2rem;
+
+    img {
+      margin-right: 1.6rem;
+    }
+  }
+
+  .job-postings-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 6.4rem;
+
+    @include media-small {
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 3.6rem;
+    }
+
+    a,
+    a:visited,
+    a:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+}
+
+.job-post {
+  position: relative;
+  margin: 3.2rem 0;
+  padding-top: 2.4rem;
+
+  @include media-small {
+    margin: 1.6rem 0;
+  }
+}
+
+.engineering {
+  @include border-arrow($blue-lighter);
+}
+
+.customer-success {
+  @include border-arrow($blue-darker);
+}
+
+.marketing {
+  @include border-arrow($red-main);
+}

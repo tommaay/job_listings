@@ -1,0 +1,50 @@
+@mixin media-small {
+  @media (max-width: calc(83.2rem * 0.625)) {
+    @content;
+  }
+}
+
+@mixin display-flex($justify: center, $align: center, $direction: row) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+@mixin transition-ease {
+  transition: all 0.2s ease-in-out;
+}
+
+@mixin label-text {
+  font-size: 1.6rem;
+  line-height: 1.25;
+  font-weight: $font-weight-medium;
+}
+
+@mixin border-arrow($color) {
+  border-top: 2px solid $grey-light;
+  cursor: pointer;
+  @include transition-ease;
+
+  &:before {
+    @include transition-ease;
+  }
+
+  &:hover {
+    border-color: $color;
+    @include transition-ease;
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 0;
+      right: -2px;
+      border: solid $color;
+      border-width: 0 2px 2px 0;
+      border-radius: 0.1rem;
+      padding: 3px;
+      transform: rotate(-45deg) translateY(-95%) scale(1.5);
+      @include transition-ease;
+    }
+  }
+}
