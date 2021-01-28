@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/job_listings/static/css/main.0708d674.chunk.css",
+    "main.js": "/job_listings/static/js/main.34253dca.chunk.js",
+    "main.js.map": "/job_listings/static/js/main.34253dca.chunk.js.map",
+    "runtime-main.js": "/job_listings/static/js/runtime-main.5a92fc57.js",
+    "runtime-main.js.map": "/job_listings/static/js/runtime-main.5a92fc57.js.map",
+    "static/js/2.449f41fe.chunk.js": "/job_listings/static/js/2.449f41fe.chunk.js",
+    "static/js/2.449f41fe.chunk.js.map": "/job_listings/static/js/2.449f41fe.chunk.js.map",
+    "index.html": "/job_listings/index.html",
+    "static/css/main.0708d674.chunk.css.map": "/job_listings/static/css/main.0708d674.chunk.css.map",
+    "static/js/2.449f41fe.chunk.js.LICENSE.txt": "/job_listings/static/js/2.449f41fe.chunk.js.LICENSE.txt",
+    "static/media/open-positions.65febcd2.gif": "/job_listings/static/media/open-positions.65febcd2.gif",
+    "static/media/open-positions@2x.66b4adc6.png": "/job_listings/static/media/open-positions@2x.66b4adc6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5a92fc57.js",
+    "static/js/2.449f41fe.chunk.js",
+    "static/css/main.0708d674.chunk.css",
+    "static/js/main.34253dca.chunk.js"
+  ]
+}
